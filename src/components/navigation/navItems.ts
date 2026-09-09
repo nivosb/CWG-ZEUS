@@ -8,7 +8,8 @@ export const navItems: NavItem[] = [
   {
     label: 'Platform',
     dropdownItems: [
-      { label: 'Zeus - Agentic Pentest Platform', href: '/products/agentic-pentest' }
+      { label: 'Zeus - Agentic Pentest Platform', href: '/products/agentic-pentest' },
+      { label: 'Zeus Product Page', href: '/zeus' }
     ]
   },
   {
