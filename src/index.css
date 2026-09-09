@@ -1,0 +1,84 @@
+/* Import Montserrat from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* Import Azonix font */
+@font-face {
+  font-family: 'Azonix';
+  src: url('/fonts/Azonix.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Montserrat', system-ui, sans-serif;
+  }
+}
+
+.font-azonix {
+  font-family: 'Azonix', system-ui, sans-serif;
+}
+
+/* Rich text content styles */
+.prose {
+  @apply text-gray-300;
+}
+
+.prose h1,
+.prose h2,
+.prose h3,
+.prose h4,
+.prose h5,
+.prose h6 {
+  @apply text-white font-bold mt-8 mb-4;
+}
+
+.prose h1 {
+  @apply text-4xl;
+}
+
+.prose h2 {
+  @apply text-3xl;
+}
+
+.prose h3 {
+  @apply text-2xl;
+}
+
+.prose p {
+  @apply mb-6 leading-relaxed;
+}
+
+.prose a {
+  @apply text-[#9C27DF] hover:text-[#7D3FF8] transition-colors;
+}
+
+.prose ul,
+.prose ol {
+  @apply mb-6 pl-6;
+}
+
+.prose li {
+  @apply mb-2;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-[#9C27DF] pl-4 italic my-6;
+}
+
+.prose code {
+  @apply bg-white/10 px-1 py-0.5 rounded;
+}
+
+.prose pre {
+  @apply bg-white/5 p-4 rounded-lg overflow-x-auto my-6;
+}
+
+.prose img {
+  @apply rounded-lg my-6;
+}
