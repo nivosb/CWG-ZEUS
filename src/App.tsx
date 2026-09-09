@@ -22,7 +22,6 @@ import ThankYouPage from './pages/ThankYouPage';
 import TermsPage from './pages/TermsPage';
 import AiPenTestingPage from './pages/AiPenTestingPage';
 import AgenticPentestPage from './pages/AgenticPentestPage';
-import ZeusPage from './pages/ZeusPage';
 import Navbar from './components/navigation/Navbar';
 import Footer from './components/footer/Footer';
 import LiveChat from './components/LiveChat';
@@ -72,7 +71,6 @@ function AppRoutes() {
                 <Route path="/services/incident-response" element={<IncidentResponsePage />} />
                 <Route path="/services/ai-penetration-testing" element={<AiPenTestingPage />} />
                 <Route path="/products/agentic-pentest" element={<AgenticPentestPage />} />
-                <Route path="/zeus" element={<ZeusPage />} />
                 <Route path="/company" element={<CompanyPage />} />
                 <Route path="/careers" element={<CareersPage />} />
                 <Route path="/clients" element={<ClientsPage />} />
